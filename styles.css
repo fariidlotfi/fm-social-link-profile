@@ -11,6 +11,11 @@
   font-family: Inter, sans serif;
 }
 
+a {
+  color: hsl(75, 94%, 57%);
+  text-decoration: none;
+}
+
 body {
   background: hsl(0, 0%, 8%);
   color: white;
