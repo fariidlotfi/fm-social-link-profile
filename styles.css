@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Inter, sans serif;
+}
+
+body {
+  background: hsl(0, 0%, 8%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  text-align: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 40px;
+  width: 400px;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 12%);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.address {
+  font-size: 1rem;
+  color: hsl(75, 94%, 57%);
+}
+
+.bio {
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.link {
+  background-color: hsl(0, 0%, 20%);
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.link:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    width: 80%;
+    padding: 20px;
+  }
+}
